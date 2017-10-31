@@ -1,0 +1,46 @@
+.layout {
+    display: grid;
+    grid-template-columns: 150px 1fr 50px;
+    grid-template-rows: 30px 1fr 150px;
+  }
+  
+  /* 1行目はヘッダー */
+  header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: 1 / -1;
+  }
+  
+  /* 2行目の左がメニュー */
+  nav {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  /* 2行目の真ん中がコンテンツ */
+  article {
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
+  }
+  
+  body {
+    background-color: lightgreen;
+  }
+  header{
+    color: green;
+  }
+  nav {
+    background-color: green;
+    color: white;
+  }
+  nav a { 
+    text-decoration:none;
+    color:white;
+  }
+  article{
+    background-color: white;
+  }
+  article>h1{
+    color: green;
+    border: 1px solid red;
+  }
